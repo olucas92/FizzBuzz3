@@ -1,19 +1,20 @@
 var FizzBuzz = function(){};
 
-// Fizzbuzz.prototype.playGame = function(number){
-//   if(this.isDivisibleByFifteen(number)){
-//     return 'fizzbuzz'
-//   }
-//   else if(this.isDivisibleByFive(number)){
-//     return 'buzz'
-//   }
-//   else if(this.isDivisibleByThree(number)){
-//     return 'fizz'
-//   }
-//   else {
-//     return 'number'
-//   }
-// };
+FizzBuzz.prototype.playGame = function(number){
+
+  if(this.isDivisibleByFifteen(number)){
+    return 'fizzbuzz'
+  }
+  else if(this.isDivisibleByFive(number)){
+    return 'buzz'
+  }
+  else if(this.isDivisibleByThree(number)){
+    return 'fizz'
+  }
+  else {
+    return 'number'
+  }
+};
 
 
 FizzBuzz.prototype.isDivisibleByThree = function(number) {
